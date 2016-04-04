@@ -1,0 +1,18 @@
+@startuml
+title Conditional - Let's measure your weight 
+start
+:Right your weight and height;
+:BMI is height/weight*2;
+if (BMI<18.5)
+    :Your weight is low;
+elseif (18.5<=BMI<=22.9)
+    :Your weight is normal;
+elseif (22.9<BMI<=24.9)
+    :Your weight is bit high;
+elseif (BMI>24.9)
+    :You're OBESITY!!!;
+else
+    :Error;
+endif
+stop
+@enduml
