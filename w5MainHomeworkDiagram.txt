@@ -1,0 +1,41 @@
+@startuml
+title Conditional - Let Start Rock Sissor Paper 
+start
+if (Boy==Girl)then(yes)
+  :Draw;
+
+elseif (Boy show Rock)
+  if(Girl show Sissor)
+    :Boy Win!!;
+  elseif(Girl show Paper)
+    :Girl Win!!
+  else
+    :Do it again;
+  endif
+
+elseif (Boy show Sissor)
+  if(Girl show Rock)
+    :Girl Win!!;
+  elseif(Girl show Paper)
+    :Boy Win!!;
+  else
+    :Do it again;
+  endif
+
+elseif (Boy show Paper)
+  if(Girl show Rock)
+    :Boy Win!!;
+  elseif (Girl show Sissor)
+    :Girl Win!!;
+  else
+  :Do it again;
+  endif
+
+endif
+
+else
+  :Do it again;
+endif
+:Game over;
+stop
+@enduml
