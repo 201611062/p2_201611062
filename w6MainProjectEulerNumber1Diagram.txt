@@ -1,0 +1,15 @@
+@startuml
+title Let's slove Project Euler Number 1
+start
+:i=0;
+:sum=0;
+repeat
+if (i divided by 3 of divied by 5)
+: sum=sum+i;
+else
+: i+1;
+endif
+repeat while (i=1000)
+: print sum;
+stop
+@enduml
