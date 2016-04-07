@@ -1,0 +1,18 @@
+@startuml
+
+start
+
+title Is It Leap Year?
+
+:Right your year!!;
+
+if (Year is divided by 4 and not divided by 100 or divided by 400)
+:"This year is leap year";
+else
+:"This year is not leap year";
+endif
+
+stop
+
+@enduml
+

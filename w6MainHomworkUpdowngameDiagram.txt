@@ -1,0 +1,34 @@
+@startuml
+
+start
+
+title Up Down Game Start!!
+
+
+:Participant are Boy and Girl;
+:Boy is tagger;
+:Boy and Girl please choose number!;
+:Boy, How many opportunity do you want to give her? Choose a number!;
+
+repeat
+if (Boy's number is bigger than Girl's)
+:Boy finger up;
+elseif (Boy's number is smaller than Girl's
+:Boy finger down;
+else
+:"Do it again";
+endif
+repeatwhile (Girl use all opportunity or say correct answer)
+
+if (Girl use all opportunity)
+:Boy win;
+elseif (Girl say correct answer)
+:Girl win;
+endif
+
+:"Game over. Thank you for participating";
+
+stop
+
+@enduml
+
